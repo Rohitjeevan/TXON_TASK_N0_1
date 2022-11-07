@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,300&family=Ubuntu:wght@300&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   /*  background-color: #353836; */
+   /*  color: white; */
+    font-family:  'Poppins', sans-serif;;
+}
+
+header a{
+    text-decoration: none;
+}
+header{
+    padding: 0 20px;
+    background-color: #1d1f1d;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#brand{
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+#brand a{
+    color: #09c372;
+}
+
+ul{
+    list-style: none;
+    height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+ul a{
+    color: white;
+}
+ul li{
+    padding: 5px;
+    margin-left: 15px;
+}
+
+ul li:hover{
+    transform: scale(1.3);
+}
+
+#login,#signup{
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+#login{
+    border:1px solid #438fab;
+}
+#signup{
+    border:1px solid #ff3860;
+}
+#login a{
+    color: #438fab;
+}
+
+#signup a{
+    color:  #ff3860;
+}
+#humburger-icon{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#humburger-icon div {
+       width: 35px;
+       height: 3px;
+       background-color: white;
+       margin: 6px 0;
+       transition: 0.4s;
+}
+
+.open .bar1{
+    -webkit-transform: rotate(-45) translate(-6px,6px);
+    transform: rotate(-45deg) translate(-6px,6px);
+}
+
+.open .bar2{
+    opacity: 0;
+}
+
+.open .bar3{
+    -webkit-transform: rotate(45) translate(-6px,-8px);
+    transform: rotate(45deg) translate(-6px,-8px);
+}
+
+.open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh-50px);
+    width: 100%;
+}
+@media only screen and (max-width:600px){
+    header nav{
+        display: none;
+    }
+    
+    #humburger-icon{
+      
+        display: block;
+       
+    }
+}
+.container{
+    height: 90vh;
+    width: 212vh;
+   background-image: url("bg.png");
+
+}
+.offer{
+    height: 60vh;
+    width: 212vh;
+    text-align: center;
+    padding-top: 50px;
+}
+.offer h2{
+    color: #ffE400;
+   font-size: 2.8rem;
+   font-family: 'Poppins', sans-serif;
+}
+
+.membership{
+    height: 40vh;
+    width: 212vh;
+    background-color: rgba(0,57,97,.76);
+    text-align: center;
+    padding-top: 40px;
+    color: #ffE400;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.btn{
+    padding: 8px 40px;
+    background-color: rgba(0,57,97,.76);
+     border-color:  #ffe70f;
+     margin-top: 30px;
+     color: #ffE400;
+     display: flex;
+     margin-top: 60px;
+     margin-left: 700px;
+}
+.btn:hover{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 1px solid black;
+}
+
+.sponsers{
+    height: 40vh;
+    width: 212vh;
+    display: flex;
+}
+.sp1{
+    border-radius: 50%;
+    padding-left: 200px;
+}
+
+.sp2{
+    border-radius: 10px;
+    padding-left: 150px;
+}
+
+.special-offer{
+    height: 40vh;
+    width: 212vh;
+    margin-top: 20px;
+    background-color: rgba(0,57,97,.76);
+    color: #ffE400;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.pre-sale{
+    height: 60vh;
+    width: 212vh;
+    text-align: center;
+    padding: 10vh 10vh;
+    font-family: 'Poppins', sans-serif;;
+}
+imp{
+    color: #ffe70f;
+}
+
+.box{
+   display: flex;
+}
+
+.box1 , .box2,.box3{
+    width: 100vh;
+    height: 15vh;
+    border: 3px solid black;
+    margin:30px;
+   border-radius: 10px;
+   text-align: center;
+   padding-top: 10px;
+}
+
+ .btn1{
+    background-color: #ffe70f;
+    width: 70px;
+    height: 30px;
+   margin-top: 15px;
+   cursor: pointer;
+ }
+
+ .upcomegym{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    font-family: 'Poppins', sans-serif;;
+    display: flex;
+ }
+
+ .flex-box{
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+ }
+
+.flex-box img{
+    height:190px ;
+}
+
+.capture1{
+    width: 200vh;
+    height: 60vh;
+}
+
+
+.offer-1{
+    font-size: 2rem;
+}
+
+#contact{
+    width: 212vh;
+    height: 40vh;
+    background-color: rgba(0,57,97,.76);
+    color: #ffe70f;;
+   text-align: center;
+   padding-top: 20px;
+}
+
+#contact div{
+    padding-top: 20px;
+    text-align: center;
+    color: #1d1f1d;
+    font-size: 0.9rem;
+}
+
+
+
